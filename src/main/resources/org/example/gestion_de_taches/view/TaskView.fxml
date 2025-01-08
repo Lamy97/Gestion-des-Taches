@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gestion_de_taches.Controller.TaskController" stylesheets="@styles.css">
+
+    <HBox alignment="CENTER">
+        <ImageView fitHeight="40" fitWidth="50">
+            <Image url="@logo.png"/>
+        </ImageView>
+        <Label text="Gestion de Projets" styleClass="title"/>
+    </HBox>
+    <HBox spacing="20" styleClass="filter-section">
+        <Label text="Filtrer par priorité :" styleClass="filter-title"/>
+        <ComboBox fx:id="filterPriority" styleClass="filter-title"/>
+        <Label text="Filtrer par statut :" styleClass="filter-title" />
+        <ComboBox fx:id="filterStatus" styleClass="filter-title"/>
+        <Label text="Filtrer par catégorie :" styleClass="filter-title"/>
+        <ComboBox fx:id="filterCategory" styleClass="filter-title"/>
+        <Label text="Rechercher :" styleClass="filter-title"/>
+        <TextField fx:id="searchField" styleClass="filter-title"/>
+    </HBox>
+    <TableView fx:id="taskTable">
+        <columns>
+            <TableColumn fx:id="titleColumn" text="Titre" />
+            <TableColumn fx:id="descriptionColumn" text="Description"  />
+            <TableColumn fx:id="priorityColumn" text="Priorité"  />
+            <TableColumn fx:id="statusColumn" text="Statut" />
+            <TableColumn fx:id="categoryColumn" text="Catégorie"  />
+            <TableColumn fx:id="dueDateColumn" text="Date Limite" />
+        </columns>
+    </TableView>
+    <HBox spacing="10" styleClass="filter-section">
+        <Label text="Titre :" styleClass="bottom-title" />
+        <TextField fx:id="titleField" styleClass="bottom-title"/>
+        <Label text="Description :" styleClass="bottom-title" />
+        <TextField fx:id="descriptionField" styleClass="bottom-title" />
+        <Label text="Priorité :" styleClass="bottom-title" />
+        <ComboBox fx:id="priorityField" styleClass="bottom-title" />
+        <Label text="Statut :" styleClass="bottom-title" />
+        <ComboBox fx:id="statusField" styleClass="bottom-title" />
+        <Label text="Catégorie :" styleClass="bottom-title" />
+        <ComboBox fx:id="categoryField" styleClass="bottom-title" />
+        <Label text="Date Limite :" styleClass="bottom-title" />
+        <DatePicker fx:id="dueDateField" styleClass="bottom-title" />
+    </HBox>
+    <HBox spacing="10" styleClass="hbox-buttons">
+        <Button fx:id="addButton" text="Ajouter" styleClass="button-add" />
+        <Button fx:id="updateButton" text="Modifier" styleClass="button-update" />
+        <Button fx:id="deleteButton" text="Supprimer" styleClass="button-delete" />
+        <Button fx:id="exportButton" text="Exporter" styleClass="button-export" />
+    </HBox>
+    <Label fx:id="statsLabel" text="Statistiques" styleClass="stats-label"/>
+</VBox>
