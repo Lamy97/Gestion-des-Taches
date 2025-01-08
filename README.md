@@ -24,7 +24,7 @@
 
 ## **🎨 Interface Utilisateur**
 <p align="center">
-<img src="https://via.placeholder.com/800x400.png?text=Gestion+de+Projets+App" alt="Capture d'écran de l'application" style="border-radius: 10px;"> ![image](https://github.com/user-attachments/assets/13bdfbc5-fee2-49d8-83bd-e189635e51f6)
+<img src="https://github.com/user-attachments/assets/13bdfbc5-fee2-49d8-83bd-e189635e51f6" alt="Capture d'écran de l'application" style="border-radius: 10px;">
 
 </p>
 <p align="center"><i>Un aperçu moderne et accessible de l'application.</i></p>
