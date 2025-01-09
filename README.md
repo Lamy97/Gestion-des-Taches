@@ -55,4 +55,4 @@ L'application respecte la séparation des responsabilités selon le modèle **MV
 1. **Clonez le dépôt** :
    ```bash
    git clone https://github.com/votre-utilisateur/gestion-de-taches.git
-<p align="center"> Made with ❤️ by <b>Me</b> </p> `
+<p align="center"> Made by ❤️  <b>Me</b> </p> `
